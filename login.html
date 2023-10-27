@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body{
+            background:url(image/Screenshot\ \(32\).png);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color:rgba(0, 0, 0, 0.3);
+            padding: 17px;
+            border-radius: 7px;
+            margin-top: 150px;
+        }
+
+        .input-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 200px;
+            width: 200px;
+            border: none;
+        }
+
+        .login{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            font-size: 0.3in;
+            /*padding: 5px 10px;
+            /*background-color: gray;*/
+            border-radius: 5px;
+            margin-bottom: 0px;
+        }
+
+        .p-2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        a{
+            color: black;
+        }
+
+        input{
+            height: 30px;
+            width: 100%;
+            background-color: rgb(135, 138, 225);
+            border: none;
+            color: #ffffff;
+            padding-inline-start: 10px;
+            font-size: 13px;
+            font-weight: 100;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input::placeholder{
+            color: #e7e7e7;
+        }
+
+        #submit{
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        #submit:active{
+            background-color: rgb(167, 170, 233);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .footer{
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            height: 50px;
+            flex-direction: column;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-top: 0.3px solid rgb(101, 101, 101);
+            background-color:rgba(0, 0, 0, 0.5);
+        }
+
+        .footer-p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bitto{
+            color: rgb(255, 255, 255);
+            margin-left: 7px;
+        }
+
+        .contact{
+            color: rgb(255, 255, 255);
+            margin-left: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="p">
+            <p class="login">
+                Login
+            </p>
+        </div>
+        <p class="p-2">
+            Don't have an account? <a href="#">sign up</a>
+        </p>
+        <div class="input-div">
+            <input type="text" placeholder="Name">
+            <input type="password" placeholder="Password">
+            <input type="email" placeholder="Email">
+            <input type="submit" id="submit">
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="footer-p">
+            This is a project made by Basit Iqbal Bitto, owner of <a href="https://bitto29.github.io" class="bitto">bitto29.github.io</a>. For business purpose <a href="mailto:bitto3626pc@gmail.com" class="contact">contact me</a>.
+        </p>
+    </div>
+</body>
+</html>
